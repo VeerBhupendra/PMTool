@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+                <highPriority>true</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed - Requested - Demo</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed - Responded</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed - Responded - No</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deferred</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <closed>false</closed>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not to Follow</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Intro App</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email: Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email:</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Bug</fullName>
+        <active>true</active>
+        <label>Bug</label>
+        <picklistValues>
+            <picklist>DMAPP__TTG_Prime_Action_Type__c</picklist>
+            <values>
+                <fullName>Emphasize your strengths</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insulate against competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minimize your weaknesses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prove your value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrieve missing information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Requested - Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded - No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not to Follow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_Action_By__c</picklist>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Feedback_By_QA</fullName>
+        <active>false</active>
+        <label>Feedback By QA</label>
+        <picklistValues>
+            <picklist>DMAPP__TTG_Prime_Action_Type__c</picklist>
+            <values>
+                <fullName>Emphasize your strengths</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insulate against competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minimize your weaknesses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prove your value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrieve missing information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Requested - Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded - No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not to Follow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_Action_By__c</picklist>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Mobile</fullName>
+        <active>true</active>
+        <label>Mobile</label>
+        <picklistValues>
+            <picklist>DMAPP__TTG_Prime_Action_Type__c</picklist>
+            <values>
+                <fullName>Emphasize your strengths</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insulate against competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minimize your weaknesses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prove your value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrieve missing information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Requested - Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded - No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not to Follow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_Action_By__c</picklist>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>DMAPP__TTG_Prime_Action_Type__c</picklist>
+            <values>
+                <fullName>Emphasize your strengths</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insulate against competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minimize your weaknesses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prove your value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrieve missing information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Requested - Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded - No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not to Follow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_Action_By__c</picklist>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>User_Story</fullName>
+        <active>true</active>
+        <label>User Story</label>
+        <picklistValues>
+            <picklist>DMAPP__TTG_Prime_Action_Type__c</picklist>
+            <values>
+                <fullName>Emphasize your strengths</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insulate against competition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minimize your weaknesses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prove your value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrieve missing information</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Requested - Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed - Responded - No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not to Follow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email%3A Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 2 - with Web link</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 3 - with App Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 4 - Online CRM Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 5 - App Live Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up 6 - Viewed App Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intro Mobile Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>T_Action_By__c</picklist>
+            <values>
+                <fullName>EC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>KV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

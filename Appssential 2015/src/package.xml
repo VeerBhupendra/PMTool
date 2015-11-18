@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ConnectionHelper</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ShareRecords</members>
+        <members>ShareTask</members>
+        <members>TaskTimeTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Task-User Story Task Layout</members>
+        <members>User_Story__c-User Story Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>31.0</version>
+</Package>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Assigned_to_email1__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned to email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_to_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Text(US_Currently_Assigned_to__c) = &apos;Swapna&apos;,&apos;swapna@appssential.com&apos;,if(Text(US_Currently_Assigned_to__c)= &apos;Courtney&apos;,&apos;courtney@appssential.com&apos;,IF(Text(US_Currently_Assigned_to__c)=&apos;Veer&apos;,&apos;veer@appssential.com&apos;,IF(Text(US_Currently_Assigned_to__c)=&apos;Robbie&apos;,&apos;robbie@appssential.com&apos;,IF(Text(US_Currently_Assigned_to__c)=&apos;Aung&apos;,&apos;aung@appssential.com&apos;,&apos;&apos;)))))</formula>
+        <label>Assigned to email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reporter_Email1__c</fullName>
+        <externalId>false</externalId>
+        <label>Reporter Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reporter_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Text(US_Reporter__c) = &apos;Swapna&apos;,&apos;Swapna@appssential.com&apos;,if(Text(US_Reporter__c)= &apos;Courtney&apos;,&apos;courtney@appssential.com&apos;,IF(Text(US_Reporter__c)=&apos;Robbie&apos;,&apos;robbie@appssential.com&apos;,IF(Text(US_Reporter__c)=&apos;Aung&apos;,&apos;aung@appssential.com&apos;,&apos;&apos;))))</formula>
+        <label>Reporter Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Actual_Time_To_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Actual Time To Code</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Actual_Time_To_Test__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Actual Time To Test</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Estimated_Time_To_Test__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Estimated Time To Test</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_Allocated_Time_in_Minutes__c</fullName>
+        <externalId>false</externalId>
+        <label>Allocated Time (in Minutes)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_Currently_Assigned_to__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who is currently working on this.</inlineHelpText>
+        <label>Currently Assigned to</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Anil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ankit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Courtney</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jeff</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Karan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Naval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Robbie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Swapna</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>US_Dependency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>is dependent on this user story.</inlineHelpText>
+        <label>Dependency</label>
+        <referenceTo>User_Story__c</referenceTo>
+        <relationshipLabel>User Stories</relationshipLabel>
+        <relationshipName>User_Stories</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>US_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is a brief description of user&apos;s requirements</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>US_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>US_Epic__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this going to take more than 5 days.</inlineHelpText>
+        <label>Epic</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>US_MoSCoW_Ranking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Must have, Should have, Could have, Won&apos;t have</inlineHelpText>
+        <label>MoSCoW Ranking</label>
+        <picklist>
+            <picklistValues>
+                <fullName>M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>S</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>W</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>US_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>User Stories</relationshipLabel>
+        <relationshipName>User_Stories</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>US_Project__c</fullName>
+        <externalId>false</externalId>
+        <formula>US_Opportunity__r.Account.Name &amp; &quot; - &quot; &amp;  US_Opportunity__r.Name</formula>
+        <label>Project</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_Reporter__c</fullName>
+        <externalId>false</externalId>
+        <label>Reporter</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Anil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ankit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aung</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Courtney</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jeff</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Karan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Robbie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Swapna</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>US_Sprint__c</fullName>
+        <externalId>false</externalId>
+        <label>Sprint</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sprint 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sprint 15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>US_Stages__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What&apos;s the current stage of this particular user story.</inlineHelpText>
+        <label>Stages</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deployed onto Production</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>US_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>US_Total_Estimated_Time_To_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Estimated Time To Code</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_Total_Estimated_Time_To_Code_in_Hrs__c</fullName>
+        <externalId>false</externalId>
+        <formula>US_Total_Estimated_Time_To_Code__c / 60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Estimated Time To Code in Hrs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>US_User_Story__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>A description of the requirement from the user&apos;s point of view in details.</inlineHelpText>
+        <label>User Story</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>US_see_key_How_Met__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How would you categorise this requirement as?</inlineHelpText>
+        <label>see key (How Met)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1. Standard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2. 3rd Party</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3. Combination of Standard &amp; 3rd Party</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4. Custom Report/List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5. Custom Workflow / Trigger / Coding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6. Interface with external system</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7. Gap - development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8. Process Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>User Story</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>US_Start_Date__c</columns>
+        <columns>US_End_Date__c</columns>
+        <columns>US_Description__c</columns>
+        <columns>US_Currently_Assigned_to__c</columns>
+        <columns>US_Dependency__c</columns>
+        <columns>US_Sprint__c</columns>
+        <columns>US_Stages__c</columns>
+        <columns>US_Opportunity__c</columns>
+        <columns>US_Epic__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Assign_To_Veer</fullName>
+        <columns>NAME</columns>
+        <columns>US_Start_Date__c</columns>
+        <columns>US_End_Date__c</columns>
+        <columns>US_Description__c</columns>
+        <columns>US_Opportunity__c</columns>
+        <columns>US_User_Story__c</columns>
+        <columns>US_Stages__c</columns>
+        <columns>Total_Actual_Time_To_Code__c</columns>
+        <columns>US_Allocated_Time_in_Minutes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>US_Currently_Assigned_to__c</field>
+            <operation>equals</operation>
+            <value>Veer</value>
+        </filters>
+        <label>Assign To Veer</label>
+    </listViews>
+    <listViews>
+        <fullName>Recently_Added_User_Stories</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>US_Sprint__c</columns>
+        <columns>NAME</columns>
+        <columns>US_User_Story__c</columns>
+        <columns>US_Project__c</columns>
+        <columns>US_Opportunity__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Recently Added User Stories</label>
+    </listViews>
+    <listViews>
+        <fullName>Repoter_Jeff</fullName>
+        <columns>NAME</columns>
+        <columns>US_Start_Date__c</columns>
+        <columns>US_Description__c</columns>
+        <columns>US_Opportunity__c</columns>
+        <columns>US_User_Story__c</columns>
+        <columns>US_Stages__c</columns>
+        <columns>Total_Actual_Time_To_Code__c</columns>
+        <columns>US_Allocated_Time_in_Minutes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>US_Reporter__c</field>
+            <operation>equals</operation>
+            <value>Jeff</value>
+        </filters>
+        <label>Repoter Jeff</label>
+    </listViews>
+    <nameField>
+        <displayFormat>US-{0000000000}</displayFormat>
+        <label>User Story ID</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>User Stories</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>US_Dependency__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Allocated_Time_in_Minutes__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Epic__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Sprint__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Stages__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>US_Opportunity__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
